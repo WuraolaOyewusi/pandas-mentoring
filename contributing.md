@@ -1,17 +1,18 @@
-<br>
+
+# Contributing
 
 ### Terms
-  * Upstream: the repository from the ```original_author```
-  * Origin: the forked repository under your ```account```
-<br>
 
-### 1. Fork a ```project``` to your GitHub ```account```
-### 2. Clone the ```project``` to your local environment
+  * Upstream: the repository from the `original_author`
+  * Origin: the forked repository under your `account`
+
+### 1. Fork a `project` to your GitHub `account`
+### 2. Clone the `project` to your local environment
 ```
     git clone git@github.com:account/project.git
     cd project
 ```
-### 3. Set up the origin and upstream of the your local ```project```
+### 3. Set up the origin and upstream of the your local `project`
 ```  
    #  Add the "upstream" to your cloned repository
     git remote add upstream git@github.com:original_author/project.git
@@ -43,7 +44,7 @@
    # 7) Get back your stashed changes (if any)
     git stash pop
 ```
-### 5. Do your work in a ```new-branch``` of your origin
+### 5. Do your work in a `new-branch` of your origin
 ```
    # 1) Add a new branch from your origin/master branch
    git branch new-branch origin/master
@@ -61,12 +62,36 @@
 ```
 
 ### 6. Send a pull request on GitHub
- * Go to the ```new-branch``` of your forked ```project```
- * Click ```Compare & pull request```
+ * Go to the `new-branch` of your forked `project`
+ * Click `Compare & pull request`
  * Leave a comment
-   * If you are solving an issue (e.g. ```#17```), add ```Closes #17``` in the comment, the issue will automatically be closed when the pull request is merged.
+   * If you are solving an issue (e.g. `#17`), add `Closes #17` in the comment, the issue will automatically be closed when the pull request is merged.
 
+### 7. Delete branch locally and/or remotely after pull request is merged on GitHub
+ * Deleting your local branch from the command line: `git branch -d new-branch`
+ * Additionally if you want to delete your remote branch: `git push origin : new-branch`
 
 ### Reference
 * [GitHub forking](https://gist.github.com/Chaser324/ce0505fbed06b947d962)  
 * [Git cherry-pick](https://git-scm.com/docs/git-cherry-pick)
+
+
+## PR review rules
+ * Input from two reviewers is needed to merge a pull request. One reviewer approves the merge and the other reviewer merges the pull request.
+
+
+## Issue guidelines
+### New issue
+Discovering an issue is great, here's what you need to do when you discover an issue:
+* Search if the issue has already been created.
+* If yes and open refer to existing issue.
+* If yes and closed reopen issue with descriptive comment.
+* If no, create the issue by:
+   * Following our issue [template.](https://github.com/pandas-dev/pandas/blob/master/.github/ISSUE_TEMPLATE.md)
+### Existing issue
+* Read comments.
+* Find out if anyone is working on it, if no, offer to do it. If yes, see if you can be of help.
+### Reporting bugs
+* Give information about the version and the operating system you are running.
+* Show the steps to reproduce bug.
+* Add log.
