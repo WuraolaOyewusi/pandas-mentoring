@@ -3,3 +3,4 @@
 ## How to cite pandas
 
 ## How to re-use the pandas logo
+### Color
